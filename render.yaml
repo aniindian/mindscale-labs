@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mindscale-labs
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn mindscale_labs.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mindscale_labs.settings
+      - key: SECRET_KEY
+        generateValue: true

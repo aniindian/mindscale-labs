@@ -1,0 +1,1 @@
+web: gunicorn mindscale_labs.wsgi
