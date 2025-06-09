@@ -1,1 +1,1 @@
-web: gunicorn mindscale_labs.wsgi
+web: gunicorn app:app
